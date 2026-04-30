@@ -1,0 +1,13 @@
+What an API actually is (simple explanation)
+
+An API (Application Programming Interface) is just a way for two pieces of software to communicate.
+
+A clean way to explain it in an interview:
+
+“An API is a contract that lets one system request data or actions from another system without needing to know how it’s implemented internally.”
+
+A common analogy:
+
+You (client) → send a request
+Restaurant kitchen (server) → processes it
+Waiter (API) → carries requests and responses
