@@ -20,3 +20,76 @@ The app calls a Weather API
 It sends a request like:
 GET /weather?city=Rochester
 The API returns JSON:
+{
+  "temperature": 65,
+  "condition": "Cloudy"
+}
+
+Key API concepts you should know
+1. HTTP methods (very important)
+
+These show what action you're taking:
+
+GET → retrieve data
+POST → create something
+PUT/PATCH → update
+DELETE → remove
+
+2. Endpoints
+
+An endpoint is a specific URL where the API is accessed.
+```https://api.example.com/users```
+
+3. Request & Response
+Request: what you send (URL, method, headers, body)
+Response: what you get (status code + data)
+
+4. Status codes
+
+Common ones:
+
+200 → success
+201 → created
+400 → bad request
+401 → unauthorized
+404 → not found
+500 → server error
+
+5. JSON (most common format)
+
+APIs usually send data in JSON:
+{
+  "name": "John",
+  "age": 25
+}
+
+6. Authentication
+
+APIs often require security:
+
+API keys
+Tokens (like JWT)
+OAuth (used by apps like Google login)
+
+Types of APIs 
+REST APIs (most common)
+Use HTTP methods
+Stateless
+GraphQL
+Lets clients request exactly what data they need
+SOAP
+Older, XML-based
+
+“I’ve worked with REST APIs where I send HTTP requests using tools like Postman or fetch in JavaScript, handle JSON responses, and implement error handling using status codes.”
+```fetch("https://api.example.com/users")
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+```
+
+Tools you can mention
+Postman – testing APIs
+cURL – quick API calls
+Swagger – API docs
+
+An API allows different software systems to communicate using defined endpoints and HTTP methods. In most modern applications, REST APIs return JSON data, and I interact with them by sending requests, handling responses, and managing errors and authentication
