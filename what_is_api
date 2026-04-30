@@ -11,3 +11,12 @@ A common analogy:
 You (client) → send a request
 Restaurant kitchen (server) → processes it
 Waiter (API) → carries requests and responses
+
+Real-world example
+
+When you use a weather app:
+
+The app calls a Weather API
+It sends a request like:
+GET /weather?city=Rochester
+The API returns JSON:
