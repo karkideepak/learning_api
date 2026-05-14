@@ -4,3 +4,38 @@ enable two software components to communicatie each other using a set of definci
 (client) <---> get me all events <-->(server) <--->get me all events<---> (Database)
 REST | GraphQL | RPC
 HTTP method, get, post, put, delete
+
+REST Resource modeling
+Get /events #get all events
+Get /event/{id} #get specific evebt
+POST /events/{id}/brookings
+
+HTTP MEthods
+GEt retreive data
+POST create new data
+PUT update/replace, run mulitple time get same , override
+PATCH partial update
+DELETE remove data
+
+
+Inputs 
+
+GEt /events/{id}
+specify path paramaters with resource your are working with, identipfy the resource
+
+
+Query params, first filer , & time={}, question mark is the foirst param
+Get /events?city=LA&date=2025-21-21 , optional 
+
+Request,
+POST /events
+{
+title, 
+description, 
+location, date
+}
+
+Responses
+200 success
+404 not found,
+500 - server error
