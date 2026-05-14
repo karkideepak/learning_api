@@ -1,0 +1,6 @@
+application program interface
+enable two software components to communicatie each other using a set of defincitaion and protocols.
+
+(client) <---> get me all events <-->(server) <--->get me all events<---> (Database)
+REST | GraphQL | RPC
+HTTP method, get, post, put, delete
